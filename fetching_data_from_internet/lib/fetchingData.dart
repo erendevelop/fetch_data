@@ -7,7 +7,7 @@ Future fetchData() async {
   // Getting the datas from website
 
   url = await http.get(Uri.parse(
-      "https://developers.themoviedb.org/3/movies/get-movie-details?api_key=1500496dcaf15212b62894bd98ba83f9"));
+      "https://developers.themoviedb.org/3/movies/get-movie-details?api_key=**"));
   // Decoding as map
 
   return json.decode(url.body["results"]);
